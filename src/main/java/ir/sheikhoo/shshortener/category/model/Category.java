@@ -1,4 +1,4 @@
-package ir.sheikhoo.shshortener.links.model;
+package ir.sheikhoo.shshortener.category.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -10,22 +10,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Getter@Setter
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Links {
+public class Category {
     @Id
     @GeneratedValue
     private Long id;
     @Column
-    private String originalLink;
-    @Column
-    private String shortLink;
-    @Column
-    private String title;
-    @Column
-    private String description;
-    @Column
-    private Integer visit;
-
+    private String Title;
 }
