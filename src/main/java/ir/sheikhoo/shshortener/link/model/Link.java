@@ -1,4 +1,4 @@
-package ir.sheikhoo.shshortener.links.model;
+package ir.sheikhoo.shshortener.link.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ import lombok.Setter;
 @Getter@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Links {
+public class Link {
     @Id
     @GeneratedValue
     private Long id;
